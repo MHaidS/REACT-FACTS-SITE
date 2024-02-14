@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* ...margin is removed to make navbar go all the way to the edges... */
+  margin: 0;
+
+  font-family: Inter, sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  background-color: #21222a;
+  height: 90px;
+  padding: 30px 25px;
+}
+
+.nav--logo_text,
+.nav--title {
+  margin: 0;
+}
+
+.nav--logo_text {
+  /* ...use 'margin-right: auto' to 'ReactFacts' text just to bump the 'h4' all the way to the right side */
+  margin-right: auto;
+  color: #61dafb;
+
+  font-weight: 700;
+
+  font-size: 22px;
+}
+
+.nav--title {
+  color: #deebf8;
+  font-weight: 600;
+}
+
+.nav--icon {
+  height: 30px;
+  /* ...set the margin-right of the img to '7px' to bump it away fr the 'ReactFacts' text...  */
+  margin-right: 7px;
+}
