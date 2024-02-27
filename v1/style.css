@@ -5,8 +5,9 @@
 body {
   /* ...margin is removed to make navbar go all the way to the edges... */
   margin: 0;
-
   font-family: Inter, sans-serif;
+  height: 100vh;
+  background-color: #282d35;
 }
 
 nav {
@@ -26,7 +27,6 @@ nav {
   /* ...use 'margin-right: auto' to 'ReactFacts' text just to bump the 'h4' all the way to the right side */
   margin-right: auto;
   color: #61dafb;
-
   font-weight: 700;
 
   font-size: 22px;
@@ -41,4 +41,27 @@ nav {
   height: 30px;
   /* ...set the margin-right of the img to '7px' to bump it away fr the 'ReactFacts' text...  */
   margin-right: 7px;
+}
+
+main {
+  padding: 57px 27px;
+  color: white;
+}
+
+.main--title {
+  margin: 0;
+  font-size: 39px;
+
+  letter-spacing: -0.05em;
+}
+
+.main--facts {
+  margin-top: 46px;
+}
+
+.main--facts > li {
+  line-height: 19px;
+  /* ...'padding-bloc'  allows to only specify the padding on the top & bottom in one go... */
+  padding-block: 10px;
+  max-width: 400px;
 }
