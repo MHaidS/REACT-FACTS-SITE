@@ -28,7 +28,6 @@ nav {
   margin-right: auto;
   color: #61dafb;
   font-weight: 700;
-
   font-size: 22px;
 }
 
@@ -46,22 +45,32 @@ nav {
 main {
   padding: 57px 27px;
   color: white;
+  background-image: url("./images/react-icon-large.png");
+
+  background-repeat: no-repeat;
+
+  background-position: right 75%;
 }
 
 .main--title {
   margin: 0;
   font-size: 39px;
-
   letter-spacing: -0.05em;
 }
 
 .main--facts {
   margin-top: 46px;
+  max-width: 400px;
 }
 
 .main--facts > li {
   line-height: 19px;
-  /* ...'padding-bloc'  allows to only specify the padding on the top & bottom in one go... */
+  /* ...'padding-block' allows to only specify the padding on the top & bottom in one go... */
   padding-block: 10px;
-  max-width: 400px;
+  /* max-width: 400px; */
+}
+
+.main--facts > li::marker {
+  font-size: 1.4rem;
+  color: #61dafb;
 }
